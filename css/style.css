@@ -2,18 +2,21 @@
     margin: 0;
     padding: 0;
 }
+
 :root {
-font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","SF Pro Text";
-}
-body {
-    background: url(../img/background-first-page.jpg);
+    --main-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "SF Pro Text";
+    --main-color: white;
 }
 
+body {
+    background: url(../img/background-first-page.jpg);
+    font-family: var(--main-font);
+}
 
 header {
     display: flex;
-    color: white;
-    background: black;
+    color: var(--main-color);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 70%;
     flex: 1;
     justify-content: space-around;
@@ -26,6 +29,7 @@ nav {
     flex: 1;
     justify-content: space-around;
 }
+
 .header-items {
     display: flex;
     align-items: center;
@@ -33,7 +37,6 @@ nav {
 
 .logo {
     margin: 0px 300px 0px 0px;
-
 }
 
 .logo-element {
@@ -43,6 +46,6 @@ nav {
 
 .nav-element {
     text-decoration: none;
-    color: white;
+    color: var(--main-color);
     margin: 0px 7px;
 }
