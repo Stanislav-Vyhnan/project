@@ -102,8 +102,8 @@ h1 {
 }
 
 .wine-describes-items hr {
-    width: 46px;
-    height: 3px;
+    width: 40px;
+    height: 1px;
     border: none;
     background-color: #c8693a;
 }
@@ -159,9 +159,12 @@ h1 {
     padding: 100px 0px;
 }
 
+.wine-describes-items {
+    margin: 40px;
+}
+
 .page-second .container {
-    margin: 0px 30px;
-    padding: 2px 16px;
+    margin: 0px 15px;
     width: 350px;
     height: 470px;
     display: flex;
@@ -169,12 +172,23 @@ h1 {
     align-items: flex-end;
 }
 
+.wine-describes-items p {
+    color: #898082;
+}
+
+.wine-describes-items h4,
+p,
+a {
+    padding: 20px 0px;
+}
+
+a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
 .wine-describes-items h4 {
     font-family: Prata, serif;
     font-size: 22px;
     font-weight: 400;
-}
-
-.wine-describes-items p {
-    color: #898082;
 }
