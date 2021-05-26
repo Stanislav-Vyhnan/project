@@ -124,7 +124,7 @@ h1 {
 .pin-items-element-shop {
     font-weight: 600;
     background-color: var(--main-background-color);
-    width: 120px;
+    width: 9vw;
     height: 50px;
     text-align: center;
     line-height: 45px;
@@ -141,7 +141,7 @@ h1 {
     margin: 0px 20px;
     background-color: rgba(255, 255, 255, 0);
     border: 3px solid var(--main-color);
-    width: 120px;
+    width: 10vw;
     height: 45px;
     text-align: center;
     line-height: 45px;
@@ -301,4 +301,149 @@ p,
 .page-third-items h5 {
     color: var(--main-background-color);
     font-size: 28px;
+}
+
+.page-fourth {
+    background-color: var(--background-page-color);
+    max-width: 100%;
+    padding: 100px 0px 0px 0px;
+}
+
+.page-fourth-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-fourth p {
+    font-size: 18px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel-items {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+}
+
+.carousel-items-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-items img {
+    width: 24vw;
+}
+
+.slide-noneDisplay,
+#slide-noneDisplay {
+    display: none;
+    overflow: hidden;
+}
+
+.carousel-items-pin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.carousel-items-element-pin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0px 0px 0px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: var(--main-background-color);
+    width: 120px;
+    height: 50px;
+    line-height: 45px;
+    cursor: default;
+    transition: 0.5s;
+}
+
+.carousel-items-element-pin:hover {
+    background-color: var(--hover-color);
+}
+
+.carousel-element-back,
+.carousel-element-forward {
+    width: 3vw;
+    transition: 0.8s;
+    opacity: 0.5;
+}
+
+.carousel-element-back {
+    transform: rotate(180deg);
+}
+
+.carousel-element-back:hover,
+.carousel-element-forward:hover {
+    fill: var(--main-color);
+}
+
+.cart {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    border-radius: 50%;
+    width: 4%;
+    height: 8%;
+    right: 5vw;
+    top: 15vh;
+}
+
+.cart-value {
+    position: absolute;
+    text-align: center;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 50%;
+    background-color: var(--main-background-color);
+    right: 0;
+    top: 0;
+    bottom: 10px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.check-years {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.check-years-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    background-color: var(--background-page-color);
+    height: 60%;
+}
+
+.check-years-items h2 {
+    font-size: 48px;
+    font-family: var(--font-h);
+    font-weight: 400;
 }
