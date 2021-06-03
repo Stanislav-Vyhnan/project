@@ -743,6 +743,7 @@ p,
 .describe-company-element {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .describe-company-element .container {
@@ -793,6 +794,7 @@ p,
     border-radius: 1px;
     font-family: var(--main-font);
     font-weight: 600;
+    font-size: 15px;
     padding: 0vw 2vw;
 }
 
@@ -842,7 +844,7 @@ p,
 }
 
 .icon-social:hover {
-    fill: var(--background-footer-color);
+    fill: var(--background-icon-color);
 }
 
 footer {
@@ -859,4 +861,12 @@ footer {
 .reserved {
     text-align: right;
     margin-right: 10vw;
+}
+
+.nav-end-page p {
+    transition: 0.5s;
+}
+
+.nav-end-page p:hover {
+    color: white;
 }

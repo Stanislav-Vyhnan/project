@@ -1,3 +1,4 @@
+'use strict'
 let productsCarousel;
 let products;
 let elementId = 1;
