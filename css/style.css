@@ -842,7 +842,6 @@ p,
 }
 
 .icon-social:hover {
-    background-color: var(--main-background-color);
     fill: var(--background-footer-color);
 }
 

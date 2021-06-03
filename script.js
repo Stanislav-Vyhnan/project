@@ -11,7 +11,7 @@ function renderProductsCarousel(productsCarousel) {
             <img src="${product.imgUrl}" id="${product.id}" alt="${product.description}">
             <h4>${product.title}</h4>
             <p class="price">${product.price}</p>
-            <div class="carousel-items-element-pin">Add to cart</div>`;
+            <div class="carousel-items-element-pin" data-id="${product.id}">Add to cart</div>`;
 
         elementId >= 4 ?
             (elementId = 1) :
@@ -20,6 +20,7 @@ function renderProductsCarousel(productsCarousel) {
             elementId++;
 
     }
+    document.querySelectorAll('carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', openCart));
 }
 
 
@@ -33,11 +34,12 @@ function renderProducts(products) {
             <img src="${product.imgUrl}" alt="${product.description}">
             <h4>${product.title}</h4>
             <p class="price">${product.price}</p>
-            <div id="${product.id}" class="carousel-items-element-pin">Add to cart</div>
+            <div class="carousel-items-element-pin" data-id="${product.id}">Add to cart</div>
         </div>`;
     }
+    document.querySelectorAll('.carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', openCart));
 }
-document.querySelectorAll('carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', openCart));
+
 
 
 const carslBack = document.querySelector(".carousel-element-back");
@@ -59,22 +61,6 @@ function nextSlide() {
     if (startElementId >= 5) startElementId = 1;
     elementId = startElementId;
     renderProductsCarousel(productsCarousel);
-}
-
-
-
-const cart = document.querySelector(".cart");
-let cartValue = document.querySelector(".cart-value");
-let i = 0;
-
-function openCart() {
-    i++;
-    cartValue.innerHTML = i;
-    cart.style.display = "flex";
-    if (i >= 10) {
-        i = 9;
-        cartValue.innerHTML = i + "+";
-    }
 }
 
 async function fetchProductsCarousel() {
