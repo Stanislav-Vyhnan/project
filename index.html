@@ -14,6 +14,33 @@
 </head>
 
 <body>
+    <div class="modal">
+        <div class="modal-items">
+            <header>
+                <h3 style="float: left;margin-right: 35vw;">Shopping cart</h3>
+                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 123.05 123.05" style="enable-background:new 0 0 123.05 123.05;" xml:space="preserve" style="float: right;"><g>
+	            <path d="M121.325,10.925l-8.5-8.399c-2.3-2.3-6.1-2.3-8.5,0l-42.4,42.399L18.726,1.726c-2.301-2.301-6.101-2.301-8.5,0l-8.5,8.5
+		        c-2.301,2.3-2.301,6.1,0,8.5l43.1,43.1l-42.3,42.5c-2.3,2.3-2.3,6.1,0,8.5l8.5,8.5c2.3,2.3,6.1,2.3,8.5,0l42.399-42.4l42.4,42.4
+		        c2.3,2.3,6.1,2.3,8.5,0l8.5-8.5c2.3-2.3,2.3-6.1,0-8.5l-42.5-42.4l42.4-42.399C123.625,17.125,123.625,13.325,121.325,10.925z"/></g></svg>
+            </header>
+            <h4>PRODUCTS</h4>
+            <div class="products-items">
+            </div>
+            <div class="total"></div>
+            <form method="POST" action="https://formspree.io/f/mjvjwjww" class="order">
+                <h4>PLACE AN ORDER </h4>
+                <p>Name <span style="color: red;">*</span></p>
+                <input type="text" class="input-form" placeholder="Your name" name="user-name">
+                <p>Email <span style="color: red;">*</span></p>
+                <input type="text" class="input-form" placeholder="Your email address" name="user-email">
+                <p>Phone <span style="color: red;">*</span></p>
+                <input type="text" class="input-form" placeholder="Your phone" name="user-phone">
+                <p>Comment</p>
+                <input type="text" class="input-form-big" placeholder="Your comment">
+                <input type="submit" class="input-submit" value="Order">
+            </form>
+        </div>
+    </div>
 
     <div class="check-years">
         <div class="check-years-items">
@@ -414,29 +441,6 @@
     </footer>
 
 
-    <!-- Button trigger modal
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-     Modal
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
 
 
@@ -449,7 +453,8 @@
 
 
 
-    <!-- <script src="lock.window.js "></script> -->
+
+    <script src="lock.window.js "></script>
     <script src="accordion.js"></script>
     <script src="script.js "></script>
     <script src="cart.js"></script>

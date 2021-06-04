@@ -21,7 +21,7 @@ function renderProductsCarousel(productsCarousel) {
             elementId++;
 
     }
-    document.querySelectorAll('carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', openCart));
+    document.querySelectorAll('.carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', openCart));
 }
 
 
