@@ -5,13 +5,13 @@ const checkYearsOld = document.querySelector(".check-years");
 const checkYearsItems = document.querySelector(".check-years-items");
 
 function checkYears(choice) {
-    document.body.style.position = "fixed";
+    document.body.style.overflow = "hidden";
     checkYearsOld.style.display = "flex";
 }
 checkYears(0);
 
 function unlock() {
-    document.body.style.position = "static";
+    document.body.style.overflow = "auto";
     checkYearsOld.style.display = "none";
 }
 

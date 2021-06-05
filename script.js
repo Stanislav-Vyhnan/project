@@ -11,7 +11,7 @@ function renderProductsCarousel(productsCarousel) {
         productsCarouselContainer.innerHTML += `
             <img src="${product.imgUrl}" id="${product.id}" alt="${product.description}">
             <h4>${product.title}</h4>
-            <p class="price">${product.price}</p>
+            <p class="price">${product.price},00 USD</p>
             <div class="carousel-items-element-pin" data-id="${product.id}">Add to cart</div>`;
 
         elementId >= 4 ?
@@ -21,7 +21,7 @@ function renderProductsCarousel(productsCarousel) {
             elementId++;
 
     }
-    document.querySelectorAll('.carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', openCart));
+    document.querySelectorAll('.carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', cartValueCheck));
 }
 
 
@@ -34,11 +34,11 @@ function renderProducts(products) {
         <div class="page-sixth-items-wines-element">
             <img src="${product.imgUrl}" alt="${product.description}">
             <h4>${product.title}</h4>
-            <p class="price">${product.price}</p>
+            <p class="price">${product.price},00 USD</p>
             <div class="carousel-items-element-pin" data-id="${product.id}">Add to cart</div>
         </div>`;
     }
-    document.querySelectorAll('.carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', openCart));
+    document.querySelectorAll('.carousel-items-element-pin').forEach(cartPinOpen => cartPinOpen.addEventListener('click', cartValueCheck));
 }
 
 

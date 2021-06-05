@@ -3,27 +3,27 @@
         "title": "Cabernet",
         "imgUrl": "img/carousel-cabernet.jpg",
         "description": "Wine Cabernet",
-        "price": "17,00 USD"
+        "price": 17
     },
     {
         "id": 2,
         "title": "Sauvignon Blanc",
         "imgUrl": "img/carousel-blanc.jpg",
         "description": "Wine Sauvignon Blanc",
-        "price": "12,00 USD"
+        "price": 12
     },
     {
         "id": 3,
         "title": "Syrah",
         "imgUrl": "img/carousel-syrah.jpg",
         "description": "Wine Syrah",
-        "price": "13,00 USD"
+        "price": 13
     },
     {
         "id": 4,
         "title": "Pinot Grigio",
         "imgUrl": "img/carousel-pinot.jpg",
         "description": "Wine Pinot Grigio",
-        "price": "10,00 USD"
+        "price": 10
     }
 ]

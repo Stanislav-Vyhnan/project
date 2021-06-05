@@ -3,27 +3,27 @@
         "title": "Pinot Noir",
         "imgUrl": "img/pinot-noir.jpg",
         "description": "Wine Cabernet",
-        "price": "12,00 USD"
+        "price": 12
     },
     {
         "id": 6,
         "title": "Riesling",
         "imgUrl": "img/riesling.jpg",
         "description": "Wine Sauvignon Blanc",
-        "price": "16,00 USD"
+        "price": 16
     },
     {
         "id": 7,
         "title": "Zifandel",
         "imgUrl": "img/zifandel.jpg",
         "description": "Wine Syrah",
-        "price": "14,00 USD"
+        "price": 14
     },
     {
         "id": 8,
         "title": "Soave",
         "imgUrl": "img/soave.jpg",
         "description": "Wine Pinot Grigio",
-        "price": "12,00 USD"
+        "price": 12
     }
 ]
